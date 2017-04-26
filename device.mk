@@ -24,3 +24,10 @@ include $(LOCAL_PATH)/product/*.mk
 
 # Inherit the rest from msm8916-common
 $(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    e2fsck \
+    make_f2fs \
+    fsck.f2fs \
+    fibmap.f2fs
